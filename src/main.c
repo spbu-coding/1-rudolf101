@@ -98,7 +98,7 @@ char **get_integrals(struct interval_t *interval, const unsigned int *number_of_
 int main() {
     struct interval_t interval;
     read_interval(&interval);
-    unsigned int partitions[] = {5, 10, 20, 100, 500, 1000};
+    unsigned int partitions[] = {6, 10, 20, 100, 500, 1000};
     unsigned int number_of_actions = sizeof(partitions) / sizeof(partitions[0]);
     char **answer = get_integrals(&interval, &number_of_actions, partitions);
     if (!answer) {
